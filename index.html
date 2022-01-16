@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-socale=1">
+
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="./assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style/main.css">
+
+    <title>Mr Fish</title>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="saidebar-brand">
+            <h2><span><i class="fab fa-bandcamp"></i></span> <span>MrFish</span></h2>
+        </div>
+        <div class="saidebar-menu">
+            <ul>
+                <li><a class="active" href="./index.html"><span><i class="fas fa-chart-line"></i></i></span><span>Dashboard</span></a></li>
+                <li><a href="./product.html"><span><i class="fab fa-product-hunt"></i></span><span>Products</span></a></li>
+                <li><a href="./feed.html"><span><i class="fas fa-cookie"></i></span><span>Feed</span></a></li>
+				<li><a href="./returns.html"><span><i class="fas fa-undo-alt"></i></span><span>Returns</span></a></li>
+                <li><a href="./feed.html"><span style="padding-right: 10px;"><i class="fas fa-dolly-flatbed"></i></span><span>Row material</span></a></li>
+                <li>
+                    <span>
+                        <span style="padding-left: 14px;padding-right: 10px;"><i class="fas fa-users"></i></span>
+                    <span class="drop dropd">
+                       <span id="drop" class="title">Employees</span>
+                        <span class="tr"><i class="fas fa-sort-down"></i></span>
+                        <ul class="d-none drop-t drop-ti">
+                            <li  class="activ"><span class="ico"><i class="fas fa-minus"></i></span><a href="./leadership.html">Leadership</a></li>
+                            <li><span class="ico"><i class="fas fa-minus"></i></span><a href="./workers.html">Workers</a></li>
+                            <li><label for="modal"><span class="pr-3"><i class="fas fa-plus-circle"></i></span>Add</label></li>
+                        </ul>
+                    </span>
+                    </span>
+                </li>
+
+                <li>
+                    <span>
+                        <span style="padding-left: 1rem;"><i class="fas fa-hand-pointer"></i></span>
+                    <span class="drop1 dropd">
+                       <span id="drop1" class="title">Sells</span>
+                        <span class="pl-58 tr "><i class="fas fa-sort-down"></i></span>
+                        <ul class="d-none drop-t1 drop-ti">
+                            <li  class="activ"><span class="ico"><i class="fas fa-minus"></i></span><a href="./Shops.html">Shops</a></li>
+                            <li><span class="ico"><i class="fas fa-minus"></i></span><a href="./Restaurants.html">Restaurants</a></li>
+                            <li><span class="ico"><i class="fas fa-minus"></i></span><a href="./Restaurants.html">Wholesale</a></li>
+                            <li><span class="ico"><i class="fas fa-minus"></i></span><a href="./Retail.html">Retail</a></li>
+                            <li><span class="ico"><i class="fas fa-minus"></i></span><a href="./other.html">Other</a></li>
+                            <li><label for="modal"><span class="pr-3"><i class="fas fa-plus-circle"></i></span>Add</label></li>
+                        </ul>
+                    </span>
+                    </span>
+                </li>
+
+                <li>
+                    <span>
+                        <span style="padding-left: 1rem;padding-right: 10px;"><i class="fas fa-handshake"></i></span>
+                    <span class="drop3 dropd">
+                       <span id="drop3" class="title">CRM</span>
+                        <span class="pl-46 tr"><i class="fas fa-sort-down"></i></span>
+                        <ul class="d-none drop-t3 drop-ti">
+                            <li>
+                                <span>
+                                    <span style="padding-left: 1rem;"><i class="fas fa-warehouse"></i></span>
+                                <span class="drop2 dropd">
+                                   <span id="drop2" class="title">Stock</span>
+                                    <span class="pl-59 tr"><i class="fas fa-sort-down"></i></span>
+                                    <ul class="d-none drop-t2 drop-ti">
+                                        <li  class="activ"><span class="ico"><i class="fas fa-minus"></i></span><a href="./crm.html">Employess</a></li>
+                                        <li><span class="ico"><i class="fas fa-minus"></i></span><a href="./crm.html">Clients</a></li>
+                                        <li><label for="modal"><span class="pr-3"><i class="fas fa-plus-circle"></i></span>Add</label></li>
+                                    </ul>
+                                </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <span style="padding-left: 1rem;"><i class="fab fa-shopify"></i></span>
+                                <span class="drop4 dropd">
+                                   <span id="drop4" class="title">Onlineshop</span>
+                                    <span class="pl-3 tr"><i class="fas fa-sort-down"></i></span>
+                                    <ul class="d-none drop-t4 drop-ti">
+                                        <li  class="activ"><span class="ico"><i class="fas fa-minus"></i></span><a href="./crm.html">Users</a></li>
+                                        <li><span class="ico"><i class="fas fa-minus"></i></span><a href="./crm.html">Clients</a></li>
+                                        <li><label for="modal"><span class="pr-3"><i class="fas fa-plus-circle"></i></span>Add</label></li>
+                                    </ul>
+                                </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </span>
+                    </span>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <button type="button" id="modal" class="btn btn-primary d-none" data-toggle="modal" data-target="#myModal">
+        Open modal
+      </button>
+      
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Add page name</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="form-group col-12 col-md-12">
+                    <label for="name">Page name*</label>
+                    <input type="text" class="form-control" id="name" placeholder="Page name">
+                </div>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success " data-dismiss="modal">OK</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span><i class="fas fa-bars"></i></span>
+                </label>
+                <span> Dashboard</span>
+            </h2>
+
+            <div class="search-wrapper">
+                <span><i class="fas fa-search"></i></span>
+                <input type="search" placeholder="Qidirish">
+            </div>
+
+            <div class="user-wrapper">
+                <img src="./assets/images/user.png" width="40px" height="40px" alt="user">
+                <div>
+                    <h4>Azimjon Akbarjonov</h4>
+                    <small>Super user </small>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h1>54</h1>
+                        <span>Clients</span>
+                    </div>
+                    <div>
+                        <span><i class="far fa-user"></i></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>54</h1>
+                        <span>Employees</span>
+                    </div>
+                    <div>
+                        <span><i class="far fa-user"></i></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>54</h1>
+                        <span>Test</span>
+                    </div>
+                    <div>
+                        <span><i class="far fa-user"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5 ">
+                <div class="mb-5 col-md-12 mt-5" ">
+                    <div class="chart-d">
+                        <div id="chart1" style="width: 100%; height: 400px;"></div>
+                    </div>
+                </div>
+
+                <div class="mb-5 col-md-6 col-12" >
+                    <div class="chart-d">
+                        <div id="chart2" style="height: 400px;"></div>
+                    </div>
+                    
+                </div>
+                <div class="mb-5 col-md-6 col-12" >
+                    <div class="chart-d">
+                        <div id="chart3" style="height: 400px;"></div>
+                    </div>
+                </div>
+  
+                <div class="mb-5 col-md-6 col-lg-4 col-12">
+                    <div class="chart-d">
+                        <div id="chart4" style="height: 400px;"></div>
+                    </div>
+                </div>
+                <div class="mb-5 col-md-6 col-lg-4 col-12"  >
+                    <div class="chart-d">
+                        <div id="chart5" style="height: 400px;"></div>
+                    </div>
+                </div>
+                <div class="mb-5 col-md-6 col-lg-4 col-12"  >
+                    <div class="chart-d">
+                        <div id="chart6" style="height: 400px;"></div>
+                    </div>
+                </div>
+                <div class="mb-5 col-md-6 col-lg-4 col-12"  >
+                    <div class="chart-d">
+                        <div id="chart7" style="height: 400px;"></div>
+                    </div>
+                </div>
+            </div>
+           
+        </main>
+    </div>
+
+
+
+
+</body>
+
+<!-- Scripts -->
+<script src="./assets/js/jQuery.js"></script>
+<script src="./assets/js/popper.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/fonts/fontawesome-free-5.15.3-web/js/all.js"></script>
+<script src="./assets/js/app.js"></script>
+<script type="text/javascript" src="./assets/js/loader.js"></script>
+<script src="./assets/js/canvasjs.min.js"></script>
+
+    <script>
+        window.onload = function () {
+        
+            var chart = new CanvasJS.Chart("chart1", {
+	exportEnabled: true,
+	animationEnabled: true,
+	title:{
+		text: "Annual profit"
+	},
+	subtitles: [{
+		text: ""
+	}], 
+	axisX: {
+		title: "Best seller client"
+	},
+	axisY: {
+		title: "Income",
+		titleFontColor: "#4F81BC",
+		lineColor: "#4F81BC",
+		labelFontColor: "#4F81BC",
+		tickColor: "#4F81BC",
+		includeZero: true
+	},
+	axisY2: {
+		title: "Outcome",
+		titleFontColor: "#C0504E",
+		lineColor: "#C0504E",
+		labelFontColor: "#C0504",
+		tickColor: "#C0504E",
+		includeZero: true
+	},
+	toolTip: {
+		shared: true
+	},
+	legend: {
+		cursor: "pointer",
+		itemclick: toggleDataSeries
+	},
+	data: [{
+		type: "column",
+		name: "INCOMES",
+		showInLegend: true,      
+		yValueFormatString: "# ### ###.## Soums",
+		dataPoints: [
+			{ label: "2018",  y: 11000000 },
+			{ label: "2019", y: 20000000 },
+			{ label: "2020", y: 13000000 },
+			{ label: "2021",  y: 20800000 }
+		]
+	},
+	{
+		type: "column",
+		name: "OUTCOMES",
+		axisYType: "secondary",
+		showInLegend: true,
+		yValueFormatString: "# ### ###.## Soums",
+		dataPoints: [
+			{ label: "2018", y: 5000000 },
+			{ label: "2019", y: 7800000 },
+			{ label: "2020", y: 5300000 },
+			{ label: "2021", y: 18000300 }
+		]
+	}]
+});
+chart.render();
+
+function toggleDataSeries(e) {
+	if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+		e.dataSeries.visible = false;
+	} else {
+		e.dataSeries.visible = true;
+	}
+	e.chart.render();
+}
+
+
+
+var chart2 = new CanvasJS.Chart("chart2", {
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	exportEnabled: true,
+	animationEnabled: true,
+	title: {
+		text: "Income"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 25,
+		toolTipContent: "<b>{label}</b>: {y}%",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 16,
+		indexLabel: "{label} - {y}%",
+		dataPoints: [
+			{ y: 51.08, label: "Shop 1" },
+			{ y: 27.34, label: "Restaurant 2" },
+			{ y: 10.62, label: "Retail 3" },
+			{ y: 5.02, label: "Shop 3" },
+			{ y: 4.07, label: "Shop 4" },
+			{ y: 1.22, label: "Restaurant 5" },
+			{ y: 0.44, label: "Others" }
+		]
+	}]
+});
+var chart3 = new CanvasJS.Chart("chart3", {
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	exportEnabled: true,
+	animationEnabled: true,
+	title: {
+		text: "Outcome"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 25,
+		toolTipContent: "<b>{label}</b>: {y}%",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 16,
+		indexLabel: "{label} - {y}%",
+		dataPoints: [
+			{ y: 51.08, label: "Shop 1" },
+			{ y: 27.34, label: "Restaurant 2" },
+			{ y: 10.62, label: "Retail 3" },
+			{ y: 5.02, label: "Shop 3" },
+			{ y: 4.07, label: "Restaurant 5" },
+			{ y: 1.22, label: "Shop 4" },
+			{ y: 0.44, label: "Others" }
+		]
+	}]
+});
+
+var chart4 = new CanvasJS.Chart("chart4", {
+	animationEnabled: true,
+	title:{
+		text: "Region",
+		horizontalAlign: "center"
+	},
+	data: [{
+		type: "doughnut",
+		startAngle: 60,
+		//innerRadius: 60,
+		indexLabelFontSize: 17,
+		indexLabel: "{label} - #percent%",
+		toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+		dataPoints: [
+			{ y: 67, label: "Fergana" },
+			{ y: 28, label: "Tashkent" },
+			{ y: 10, label: "Andijan" },
+			{ y: 7, label: "Namangan"},
+			{ y: 15, label: "Khiva"},
+			{ y: 6, label: "Samarkand"}
+		]
+	}]
+});
+
+
+var chart5 = new CanvasJS.Chart("chart5", {
+	theme:"light2",
+	animationEnabled: true,
+	title:{
+		text: "The best fish"
+	},
+	axisY :{
+		title: "Amountz",
+		suffix: "tons"
+	},
+	toolTip: {
+		shared: "true"
+	},
+	legend:{
+		cursor:"pointer",
+		itemclick : toggleDataSeries
+	},
+	data: [{
+		type: "spline",
+		showInLegend: true,
+		yValueFormatString: "##.00mn",
+		name: "Sazan",
+		dataPoints: [
+			{ label: "Jan", y: 4.37 },
+			{ label: "Feb", y: 4.27 },
+			{ label: "Mar", y: 4.72 },
+			{ label: "Apr", y: 4.87 },
+			{ label: "May", y: 5.35 },
+			{ label: "Jun", y: 5.50 },
+			{ label: "Jul", y: 4.84 },
+			{ label: "Aug", y: 4.13 },
+			{ label: "Sep", y: 5.22 },
+			{ label: "Oct", y: 5.39 }
+		]
+	},
+	
+	{
+		type: "spline", 
+		showInLegend: true,
+		yValueFormatString: "##.00mn",
+		name: "Forel",
+		dataPoints: [
+			{ label: "Jan", y: 8 },
+			{ label: "Feb", y: 6.81 },
+			{ label: "Mar", y: 6.71 },
+			{ label: "Apr", y: 6.82 },
+			{ label: "May", y: 6.56 },
+			{ label: "Jun", y: 6.24 },
+			{ label: "Jul", y: 5.40 },
+			{ label: "Aug", y: 7.01 },
+			{ label: "Sep", y: 7.14 },
+			{ label: "Oct", y: 8.11 }
+		]
+	},
+	{
+		type: "spline", 
+		showInLegend: true,
+		yValueFormatString: "##.00mn",
+		name: "Lasos",
+		dataPoints: [
+		    { label: "Jan", y: 7 },
+			{ label: "Feb", y: 5.81 },
+			{ label: "Mar", y: 6.71 },
+			{ label: "Apr", y: 5.82 },
+			{ label: "May", y: 4.56 },
+			{ label: "Jun", y: 6 },
+			{ label: "Jul", y: 6.40 },
+			{ label: "Aug", y: 6.01 },
+			{ label: "Sep", y: 6.14 },
+			{ label: "Oct", y: 7.11 }
+		]
+	}]
+});
+chart5.render();
+
+function toggleDataSeries(e) {
+	if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible ){
+		e.dataSeries.visible = false;
+	} else {
+		e.dataSeries.visible = true;
+	}
+	chart5.render();
+}
+
+
+var chart6 = new CanvasJS.Chart("chart6", {
+	theme:"light2",
+	animationEnabled: true,
+	title:{
+		text: "The best feed"
+	},
+	axisY :{
+		title: "Amountz",
+		suffix: "tons"
+	},
+	toolTip: {
+		shared: "true"
+	},
+	legend:{
+		cursor:"pointer",
+		itemclick : toggleDataSeries
+	},
+	data: [{
+		type: "spline",
+		showInLegend: true,
+		yValueFormatString: "##.00mn",
+		name: "Feed 1",
+		dataPoints: [
+			{ label: "Jan", y: 4.37 },
+			{ label: "Feb", y: 4.27 },
+			{ label: "Mar", y: 4.72 },
+			{ label: "Apr", y: 4.87 },
+			{ label: "May", y: 5.35 },
+			{ label: "Jun", y: 5.50 },
+			{ label: "Jul", y: 4.84 },
+			{ label: "Aug", y: 4.13 },
+			{ label: "Sep", y: 5.22 },
+			{ label: "Oct", y: 5.39 }
+		]
+	},
+	
+	{
+		type: "spline", 
+		showInLegend: true,
+		yValueFormatString: "##.00mn",
+		name: "Feed 2",
+		dataPoints: [
+			{ label: "Jan", y: 8 },
+			{ label: "Feb", y: 6.81 },
+			{ label: "Mar", y: 6.71 },
+			{ label: "Apr", y: 6.82 },
+			{ label: "May", y: 6.56 },
+			{ label: "Jun", y: 6.24 },
+			{ label: "Jul", y: 5.40 },
+			{ label: "Aug", y: 7.01 },
+			{ label: "Sep", y: 7.14 },
+			{ label: "Oct", y: 8.11 }
+		]
+	},
+	{
+		type: "spline", 
+		showInLegend: true,
+		yValueFormatString: "##.00mn",
+		name: "Feed 3",
+		dataPoints: [
+			{ label: "Jan", y: 7.94 },
+			{ label: "Feb", y: 7.29 },
+			{ label: "Mar", y: 7.28 },
+			{ label: "Apr", y: 7.82 },
+			{ label: "May", y: 7.89 },
+			{ label: "Jun", y: 6.71 },
+			{ label: "Jul", y: 7.80 },
+			{ label: "Aug", y: 7.60 },
+			{ label: "Sep", y: 7.66 },
+			{ label: "Oct", y: 8.89 }
+		]
+	},
+
+          {
+		type: "spline", 
+		showInLegend: true,
+		yValueFormatString: "##.00mn",
+		name: "Feed 4",
+		dataPoints: [
+		    { label: "Jan", y: 8.94 },
+			{ label: "Feb", y: 8.29 },
+			{ label: "Mar", y: 8.28 },
+			{ label: "Apr", y: 8.82 },
+			{ label: "May", y: 8.89 },
+			{ label: "Jun", y: 7.71 },
+			{ label: "Jul", y: 8.80 },
+			{ label: "Aug", y: 8.60 },
+			{ label: "Sep", y: 8.66 },
+			{ label: "Oct", y: 9.89 }
+		]
+	}]
+});
+chart6.render();
+
+function toggleDataSeries(e) {
+	if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible ){
+		e.dataSeries.visible = false;
+	} else {
+		e.dataSeries.visible = true;
+	}
+	chart6.render();
+}
+
+var chart7 = new CanvasJS.Chart("chart7", {
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	exportEnabled: true,
+	animationEnabled: true,
+	title: {
+		text: "Employess"
+	},
+	data: [{
+		type: "pie",
+		startAngle: 25,
+		toolTipContent: "<b>{label}</b>: {y}%",
+		showInLegend: "true",
+		legendText: "{label}",
+		indexLabelFontSize: 16,
+		indexLabel: "{label} - {y}%",
+		dataPoints: [
+			{ y: 51.08, label: "Workers" },
+			{ y: 48.92, label: "Leadership" }
+		]
+	}]
+});
+chart.render();
+chart2.render(); 
+chart3.render();  
+chart4.render();  
+chart5.render();  
+chart6.render();  
+chart7.render();  
+        }
+        </script>
+        
+</html>

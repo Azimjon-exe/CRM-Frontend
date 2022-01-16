@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-socale=1">
+
+    <!-- style -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.3-web/css/all.css">
+    <link rel="stylesheet" href="./assets/style/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style/main.css">
+
+    <title>Mr Fish</title>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="saidebar-brand">
+            <h2><span><i class="fab fa-bandcamp"></i></span> <span>MrFish</span></h2>
+        </div>
+        <div class="saidebar-menu">
+            <ul>
+                <li><a href="./index.html"><span><i class="fas fa-chart-line"></i></i></span><span>Dashbord</span></a></li>
+                <li><a href="./product.html"><span><i class="fab fa-product-hunt"></i></span><span>Products</span></a></li>
+                <li><a href="./feed.html"><span><i class="fas fa-cookie"></i></span><span>Feed</span></a></li>
+                <li>
+                    <span>
+                        <span style="padding-left: 1rem;"><i class="fas fa-users"></i></span>
+                    <span class="drop dropd">
+                       <span id="drop" class="title">Employees</span>
+                        <span class="tr"><i class="fas fa-sort-down"></i></span>
+                        <ul class="d-none drop-t drop-ti">
+                            <li  class="activ"><span class="ico"><i class="fas fa-minus"></i></span><a href="./leadership.html">Leadership</a></li>
+                            <li><span class="ico"><i class="fas fa-minus"></i></span><a href="./workers.html">Workers</a></li>
+                            <li><label for="modal"><span class="pr-3"><i class="fas fa-plus-circle"></i></span>Add</label></li>
+                        </ul>
+                    </span>
+                    </span>
+                </li>
+
+                <li>
+                    <span class="activ">
+                        <span style="padding-left: 1rem;"><i class="fas fa-hand-pointer"></i></span>
+                    <span class="drop1 dropd">
+                       <span id="drop1" class="title">Sells</span>
+                        <span class="pl-3 tr"><i class="fas fa-sort-down"></i></span>
+                        <ul class=" drop-t1 drop-ti">
+                            <li  class="activ"><span class="ico"><i class="fas fa-minus"></i></span><a href="./Shops.html">Shops</a></li>
+                            <li><span class="ico"><i class="fas fa-minus"></i></span><a href="./Restuarants.html">Restuarants</a></li>
+                            <li><span class="ico"><i class="fas fa-minus"></i></span><a href="./Retail.html">Retail</a></li>
+                            <li><span class="ico"><i class="fas fa-minus"></i></span><a href="./other.html">Other</a></li>
+                            <li><label for="modal"><span class="pr-3"><i class="fas fa-plus-circle"></i></span>Add</label></li>
+                        </ul>
+                    </span>
+                    </span>
+                </li>
+                <li>
+                    <span>
+                        <span style="padding-left: 1rem;"><i class="fas fa-handshake"></i></span>
+                    <span class="drop3 dropd">
+                       <span id="drop3" class="title">CRM</span>
+                        <span class="pl-3 tr"><i class="fas fa-sort-down"></i></span>
+                        <ul class="d-none drop-t3 drop-ti">
+                            <li>
+                                <span>
+                                    <span style="padding-left: 1rem;"><i class="fas fa-warehouse"></i></span>
+                                <span class="drop2 dropd">
+                                   <span id="drop2" class="title">Stock</span>
+                                    <span class="pl-3 tr"><i class="fas fa-sort-down"></i></span>
+                                    <ul class="d-none drop-t2 drop-ti">
+                                        <li  class="activ"><span class="ico"><i class="fas fa-minus"></i></span><a href="./crm.html">Employess</a></li>
+                                        <li><span class="ico"><i class="fas fa-minus"></i></span><a href="./crm.html">Clients</a></li>
+                                        <li><label for="modal"><span class="pr-3"><i class="fas fa-plus-circle"></i></span>Add</label></li>
+                                    </ul>
+                                </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <span style="padding-left: 1rem;"><i class="fab fa-shopify"></i></span>
+                                <span class="drop4 dropd">
+                                   <span id="drop4" class="title">Onlineshop</span>
+                                    <span class="pl-3 tr"><i class="fas fa-sort-down"></i></span>
+                                    <ul class="d-none drop-t4 drop-ti">
+                                        <li  class="activ"><span class="ico"><i class="fas fa-minus"></i></span><a href="./crm.html">Users</a></li>
+                                        <li><span class="ico"><i class="fas fa-minus"></i></span><a href="./crm.html">Clients</a></li>
+                                        <li><label for="modal"><span class="pr-3"><i class="fas fa-plus-circle"></i></span>Add</label></li>
+                                    </ul>
+                                </span>
+                                </span>
+                            </li>
+                        </ul>
+                    </span>
+                    </span>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <button type="button" id="modal" class="btn btn-primary d-none" data-toggle="modal" data-target="#myModal">
+        Open modal
+      </button>
+      
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Add page name</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="form-group col-12 col-md-12">
+                    <label for="name">Page name*</label>
+                    <input type="text" class="form-control" id="name" placeholder="Page name">
+                </div>
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success " data-dismiss="modal">OK</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span><i class="fas fa-bars"></i></span>
+                </label>
+                <span> Dashboard</span>
+            </h2>
+
+            <div class="search-wrapper">
+                <span><i class="fas fa-search"></i></span>
+                <input type="search" placeholder="Qidirish">
+            </div>
+
+            <div class="user-wrapper">
+                <div class="dropdown pr-4">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                     <img src="./assets/images/united_states_of_america_square_icon_256.png" width="25px" alt=""> Eng
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"> <img src="./assets/images/russia_square_icon_256.png" width="25px" alt=""> Ru</a>
+                        <a class="dropdown-item" href="#"><img src="./assets/images/uzbekistan_square_icon_256.png" width="25px" alt=""> Uzb</a>
+                    </div>
+                </div>
+                <img src="./assets/images/user.png" width="40px" height="40px" alt="user">
+                <div>
+                    <h4>Azimjon Akbarjonov</h4>
+                    <small>Super user </small>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="card">
+                <div class="add-p-titel p-4">
+                    <h2>Income</h2>
+                </div>
+                <form class="p-4" action="">
+                    <div class="row">
+                        <div class="form-group col-12 col-md-6">
+                            <label for="name">Product name*</label>
+                            <select class="form-control" id="name">
+                                <option value="Product 1">Product 1</option>
+                                <option value="Product 2">Product 2</option>
+                                <option value="Product 3">Product 3</option>
+                              
+                              </select>
+                        </div>
+
+                        <div class="form-group col-12 col-md-6">
+                            <label for="quantity">Quantity*</label>
+                            <input type="text" class="form-control" id="quantity" placeholder="Quantity">
+                        </div>
+
+                        <div class="form-group col-12 col-md-6">
+                            <label for="volume">Volume</label>
+                            <select class="form-control" id="volume">
+                        <option value="kg">Kg</option>
+                        <option value="pcs">Pcs</option>
+                        <option value="L">L</option>
+                      </select>
+                        </div>
+
+                        <div class="form-group col-12 col-md-6">
+                            <label for="data">Data*</label>
+                            <input type="date" class="form-control" id="data" placeholder="Data">
+                        </div>
+
+                        <div class="form-group col-12 col-md-6">
+                            <label for="price">Price*</label>
+                            <input type="text" class="form-control" id="price" placeholder="Price">
+                        </div>
+
+                        <div class="form-group col-12 col-md-6">
+                            <label for="total">Total*</label>
+                            <input type="text" class="form-control" id="total" placeholder="Total">
+                        </div>
+
+                        <div class="form-group col-12 col-md-12">
+                            <a href="./more-sell.html" class="btn btn-info">OK</a>
+                            <button class="btn btn-danger">Reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+
+
+
+
+</body>
+
+<!-- Scripts -->
+<script src="./assets/js/jQuery.js "></script>
+<script src="./assets/js/popper.js "></script>
+<script src="./assets/js/bootstrap.min.js "></script>
+<script src="./assets/fonts/fontawesome-free-5.15.3-web/js/all.js "></script>
+<script src="./assets/js/app.js "></script>
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
+</html>
